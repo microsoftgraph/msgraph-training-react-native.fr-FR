@@ -410,16 +410,17 @@ Dans cette section, vous allez créer un menu pour l’application et mettre à 
         initialRouteName: 'AuthLoading'
       }
     ));
+    ```
 
-1. Save all of your changes.
+1. Enregistrez toutes vos modifications.
 
-1. Reload the application in your emulator.
+1. Rechargez l’application dans votre émulateur.
 
-The app's menu should work to navigate between the two fragments and change when you tap the **Sign in** or **Sign out** buttons.
+Le menu de l’application doit fonctionner pour naviguer entre les deux fragments et changer lorsque vous appuyez sur les boutons **se connecter** ou **se déconnecter** .
 
-![Screenshots of the application on Android](./images/android-app-screens.png)
+![Captures d’écran de l’application sur Android](./images/android-app-screens.png)
 
-![Screenshots of the application on iOS](./images/ios-app-screens.png)
+![Captures d’écran de l’application sur iOS](./images/ios-app-screens.png)
 
 > [!NOTE]
-> You may receive warnings when running the app about Async Storage or componentWillUpdate. For the purposes of this tutorial, you can dismiss those warnings.
+> Vous pouvez recevoir des avertissements lors de l’exécution de l’application sur le stockage Async ou componentWillUpdate. Pour les besoins de ce didacticiel, vous pouvez ignorer ces avertissements.

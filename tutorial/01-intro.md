@@ -22,10 +22,10 @@ Vous devez également disposer d’un compte Microsoft personnel disposant d’u
 > [!NOTE]
 > Ce didacticiel a été écrit à l’aide de l’interface CLI native de REACT, qui présente des conditions préalables spécifiques en fonction de votre système d’exploitation et des plateformes cibles. Pour obtenir des instructions sur la configuration de votre ordinateur de développement, voir [REACT Native Getting Started](https://reactnative.dev/docs/environment-setup) . Les versions utilisées pour ce didacticiel sont répertoriées ci-dessous. Les étapes de ce guide peuvent fonctionner avec d’autres versions, mais cela n’a pas été testé.
 >
-> - Android Studio version 3.6.2 avec le kit de développement logiciel (SDK) Android 9,0
+> - Android Studio version 4,1 avec le kit de développement logiciel (SDK) Android 9,0
 > - Kit de développement Java version 12.0.2
-> - Xcode version 11,4
-> - Node. js version 12.16.2
+> - Xcode version 12,1
+> - Node.js version 14.15.0
 
 ## <a name="feedback"></a>Commentaires
 

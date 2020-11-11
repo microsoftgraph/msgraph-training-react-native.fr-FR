@@ -12,10 +12,10 @@ Pour exécuter le projet terminé dans ce dossier, vous avez besoin des élémen
 
 > **Remarque :** Ce didacticiel a été écrit à l’aide de l’interface CLI native de REACT, qui présente des conditions préalables spécifiques en fonction de votre système d’exploitation et des plateformes cibles. Pour obtenir des instructions sur la configuration de votre ordinateur de développement, voir [REACT Native Getting Started](https://facebook.github.io/react-native/docs/getting-started) . Les versions utilisées pour ce didacticiel sont répertoriées ci-dessous. Les étapes de ce guide peuvent fonctionner avec d’autres versions, mais cela n’a pas été testé.
 >
-> - Android Studio version 3.6.2 avec le kit de développement logiciel (SDK) Android 9,0
+> - Android Studio version 4,1 avec le kit de développement logiciel (SDK) Android 9,0
 > - Kit de développement Java version 12.0.2
-> - Xcode version 11,4
-> - Node. js version 12.16.2
+> - Xcode version 12,1
+> - Node.js version 14.15.0
 
 Si vous n’avez pas de compte Microsoft, vous disposez de deux options pour obtenir un compte gratuit :
 
@@ -24,17 +24,17 @@ Si vous n’avez pas de compte Microsoft, vous disposez de deux options pour obt
 
 ## <a name="register-an-application-with-the-azure-active-directory-admin-center"></a>Enregistrer une application avec le centre d’administration Azure Active Directory
 
-1. Ouvrez un navigateur, accédez au [Centre d’administration Azure Active Directory ](https://aad.portal.azure.com) et connectez-vous à l’aide d’un **compte personnel** (ou compte Microsoft) ou d’un **compte professionnel ou scolaire**.
+1. Ouvrez un navigateur, accédez au [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) et connectez-vous à l’aide d’un **compte personnel** (ou compte Microsoft) ou d’un **compte professionnel ou scolaire**.
 
 1. Sélectionnez **Azure Active Directory** dans le volet de navigation gauche, puis sélectionnez **Inscriptions d’applications** sous **Gérer**.
 
     ![Une capture d’écran des inscriptions d’applications ](/tutorial/images/aad-portal-app-registrations.png)
 
-1. Sélectionnez **Nouvelle inscription**. Sur la page **Inscrire une application**, définissez les valeurs comme suit.
+1. Sélectionnez **Nouvelle inscription**. Sur la page **Inscrire une application** , définissez les valeurs comme suit.
 
     - Définissez le **Nom** sur `React Native Graph Tutorial`.
     - Définissez les **Types de comptes pris en charge** sur **Comptes dans un annuaire organisationnel et comptes personnels Microsoft**.
-    - Sous **URI de redirection**, remplacez la liste déroulante par **client Public (mobile & Desktop)** et définissez `graph-tutorial://react-native-auth`la valeur sur.
+    - Sous **URI de redirection** , remplacez la liste déroulante par **client Public (mobile & Desktop)** et définissez la valeur sur `graph-tutorial://react-native-auth` .
 
     ![Capture d’écran de la page Inscrire une application](/tutorial/images/aad-register-an-app.png)
 
@@ -42,13 +42,13 @@ Si vous n’avez pas de compte Microsoft, vous disposez de deux options pour obt
 
     ![Une capture d’écran de l’ID d’application de la nouvelle inscription d'application](/tutorial/images/aad-application-id.png)
 
-1. Sous **gérer**, sélectionnez **authentification**. Sur la page **URI de redirection** , ajoutez un autre URI de redirection de type **public client (mobile & Desktop)**, `urn:ietf:wg:oauth:2.0:oob`avec l’URI. Sélectionnez **Enregistrer**.
+1. Sous **gérer** , sélectionnez **authentification**. Sur la page **URI de redirection** , ajoutez un autre URI de redirection de type **public client (mobile & Desktop)** , avec l’URI `urn:ietf:wg:oauth:2.0:oob` . Sélectionnez **Enregistrer**.
 
     ![Capture d’écran de la page des URI de redirection](/tutorial/images/aad-redirect-uris.png)
 
 ## <a name="configure-the-sample"></a>Configurer l’exemple
 
-1. Renommez le fichier **GraphTutorial/auth/authconfig. TS. example** en **authconfig. TS**.
+1. Renommez le fichier **GraphTutorial/auth/authconfig. example. TS** en **authconfig. TS**.
 1. Modifiez le fichier **authconfig. TS** et effectuez les modifications suivantes.
     1. Remplacez `YOUR_APP_ID_HERE` par l' **ID d’application** que vous avez obtenu à partir du portail d’inscription des applications.
 

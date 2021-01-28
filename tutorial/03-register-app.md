@@ -1,25 +1,21 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Dans cet exercice, vous allez créer une application native Azure AD à l’aide du centre d’administration Azure Active Directory.
+Dans cet exercice, vous allez créer une application native Azure AD à l’aide du Centre d’administration Azure Active Directory.
 
-1. Ouvrez un navigateur, accédez au [Centre d’administration Azure Active Directory ](https://aad.portal.azure.com) et connectez-vous à l’aide d’un **compte personnel** (ou compte Microsoft) ou d’un **compte professionnel ou scolaire**.
+1. Ouvrez un navigateur, accédez au [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) et connectez-vous à l’aide d’un **compte personnel** (ou compte Microsoft) ou d’un **compte professionnel ou scolaire**.
 
-1. Sélectionnez **Azure Active Directory** dans le volet de navigation de gauche, puis sélectionnez **inscriptions des applications** sous **gérer**.
+1. Sélectionnez **Azure Active Directory** dans le volet de navigation gauche, puis sélectionnez **Inscriptions d’applications** sous **Gérer**.
 
-    ![Capture d’écran des inscriptions d’application ](./images/aad-portal-app-registrations.png)
+    ![Une capture d’écran des inscriptions d’applications ](./images/aad-portal-app-registrations.png)
 
 1. Sélectionnez **Nouvelle inscription**. Sur la page **Inscrire une application**, définissez les valeurs comme suit.
 
     - Définissez le **Nom** sur `React Native Graph Tutorial`.
     - Définissez les **Types de comptes pris en charge** sur **Comptes dans un annuaire organisationnel et comptes personnels Microsoft**.
-    - Sous **URI de redirection**, remplacez la liste déroulante par **client Public (mobile & Desktop)** et définissez `graph-tutorial://react-native-auth`la valeur sur.
+    - Sous **URI de redirection,** modifiez la liste de listes en **client public (mobile & bureau)** et définissez la valeur sur `graph-tutorial://react-native-auth/` .
 
-    ![Capture d’écran de la page inscrire une application](./images/aad-register-an-app.png)
+    ![Capture d’écran de la page Inscrire une application](./images/aad-register-an-app.png)
 
-1. Sélectionnez **Enregistrer**. Sur la page **didacticiel de graphique Native REACT** , copiez la valeur de l' **ID d’application (client)** et enregistrez-la, vous en aurez besoin à l’étape suivante.
+1. Sélectionner **Inscription**. Dans la page **Didacticiel React Native Graph,** copiez la valeur de l’ID de l’application **(client)** et enregistrez-la, vous en aurez besoin à l’étape suivante.
 
-    ![Capture d’écran de l’ID d’application de la nouvelle inscription de l’application](./images/aad-application-id.png)
-
-1. Sous **gérer**, sélectionnez **authentification**. Sur la page **URI de redirection** , ajoutez un autre URI de redirection de type **public client (mobile & Desktop)**, `urn:ietf:wg:oauth:2.0:oob`avec l’URI. Cliquez sur **Enregistrer**.
-
-    ![Capture d’écran de la page des URI de redirection](./images/aad-redirect-uris.png)
+    ![Une capture d’écran de l’ID d’application de la nouvelle inscription d'application](./images/aad-application-id.png)
